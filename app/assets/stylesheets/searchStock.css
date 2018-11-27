@@ -1,0 +1,21 @@
+#searchStockTitle{
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+  color:black;
+  display: inline-block;
+  margin-left: 35%;
+}
+
+
+#SearchForm{
+  width: 25%;
+  margin-left: 32%;
+}
+
+.searchFormButton{
+  display: inline;
+  margin-left: 10px;
+
+
+}

@@ -1,0 +1,74 @@
+
+/* Joing the worlds leading stock -- create Account -- login  */
+.hero{
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 10px;
+
+
+}
+
+
+.slogan{
+  color: white !important;
+  padding: 30px;
+}
+
+
+/* create Account && Login buttons  */
+.HcreateNew{
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: rgba(35, 161, 100,0.5)
+
+}
+
+
+.Hlogin{
+  display: inline;
+  margin-left: 10px;
+  border: 1px solid rgba(184, 31, 49,0.5);
+  background-color: rgba(184, 31, 49,0.5);
+  padding: 18px;
+  width: 20%;
+  border-radius: 5px
+}
+
+a.Hlogin{
+  color: white;
+}
+
+
+.homeLoggedOut{
+  display: inline;
+}
+
+/*  end of create account and login buttons */
+
+
+
+
+.homeContainer {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('successmarket.jpg');
+  background-size: cover;
+  background-image: no-repeat;
+  overflow: auto;
+  margin-top: -50px;
+  margin-top: 20px;
+}
+
+.createNewButton{
+  color: white;
+}
+
+.loginButton{
+  color: white;
+}
+
+
+.NavWelcomeNavA{
+  color: blue;
+}

@@ -1,0 +1,54 @@
+// Place all the styles related to the session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.Box{
+  text-align: center;
+  height: 500px;
+  background: rgba(44, 65, 82, 0.5);
+  margin-top: 10px;
+  height: 100vh;
+
+}
+
+.password{
+  border-radius: 5px;
+  margin-left: 40%;
+  width: 23%}
+
+
+.email{
+  color: white !important;
+  border-radius: 5px;
+  margin-left: 40%;
+  width: 23%
+}
+
+
+.loginP{
+  color: white !important;
+  margin-top: 10px;
+  text-align: center;
+  background: rgba(44, 65, 82, 0.5);
+
+
+}
+
+.signing{
+  width: 24%;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 35px;
+  background-color: #003662 !important;
+
+}
+
+header{
+  background: rgba(44, 65, 82, 0.5);
+
+}
+
+.form{
+  margin-top: 50px;
+}

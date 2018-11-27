@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StockApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+
+    <%if @current_user.present? %>
+        Welcome back, <%= @current_user.username %>
+        <%= link_to 'Logout', login_path, method: 'delete', class: "logoutNav"  %>
+        <div class="userPresent">
+        </div>
+        <a href="/#/news" class="">Your News</a>
+        <a href="/#/SearchStock" class="searchstock">Search Stock</a>
+
+          <a href="/#/" class="home">Home</a>
+    <div>
+    <% else %>
+        <a href="/#/" class="homeLoggedOut">Home</a>
+      </div>
+
+      
+
+    <% end %>
+
+
+
+
+
+    <%= yield %>
+  </body>
+</html>
