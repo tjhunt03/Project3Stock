@@ -32,12 +32,14 @@ class SearchStock extends React.Component {
 
     render(){
       return (
+        <div className="bodySearchStock">
         <div class="stockBody" >
-          <h2 id="searchStockTitle">Search Stock</h2>
-          <form onSubmit={ ev => this.handleSubmit(ev) }>
-            <input id="SearchForm" placeholder="Lookup Quote" type="text" onChange={ ev => this.handleInput(ev) } />
-            <input type="submit" value="Search" className="searchFormButton"/>
-          </form>
+        <h2 id="searchStockTitle">Search Stock</h2>
+        <form onSubmit={ ev => this.handleSubmit(ev) }>
+        <input id="SearchForm" placeholder="Lookup Quote" type="text" onChange={ ev => this.handleInput(ev) }/>
+        <input type="submit" value="Search" className="searchFormButton"/>
+        </form>
+        </div>
         </div>
       );
     }

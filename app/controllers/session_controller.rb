@@ -16,7 +16,7 @@ class SessionController < ApplicationController
         #is logged in on all future pages
         session[:user_id] = user.id
 
-        redirect_to root_path
+        redirect_to "/#/news"
         # (user.id)
       else
         # Bad credentials, i.e unsuccessful login

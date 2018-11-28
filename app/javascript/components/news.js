@@ -32,11 +32,20 @@ class news extends React.Component {
   render(){
     if (!this.state.newsInfo.articles){
       return(<div>loading...</div>)
+
     }
+
     return(
-      <div>
-        { this.state.newsInfo.articles.map(n => <li className="Title"><a href={n.url}>{n.title}</a></li>)}
+
+      <div className="yourNewsBorder">
+        <div>
+        <h1 className="newsTitle H">Top News Headlines</h1>
+
+
+        { this.state.newsInfo.articles.map(n => <li className="newsTitle"><h5 className="yourNewsTitle"> </h5><a href={n.url}>{n.title}</a>
+      <div className="newsDescription"><h5 className="yourNewsTitle"> </h5>{n.description}</div>{n.urlToImage}</li>)}
       </div>
+    </div>
     )
   }
 };
