@@ -17,17 +17,7 @@
 
 
 
-.logoutNav{
-  margin-top: 300px;
-  display: inline;
-  margin-left: 10px;
 
-}
-
-.logoutNav:hover{
-  border: 1px solid white;
-  border-radius: 5px;
-}
 
 /* .searchstock{
   display: inline;
@@ -43,9 +33,6 @@
 
 } */
 
-.userPresent{
-  margin-left: 73%
-}
 
 
 
@@ -61,36 +48,40 @@
 }
 
 .searchstock{
-  margin-left:75%;
-  border: 1px solid blue;
-  padding: 10px;
+  float: right;
+  margin-right: 20px;
   border-radius: 5px;
+
 
 
 }
 
-.searchstock:hover{
-  border: 1px solid white;
-  border-radius: 5px;
+
+.newsNav{
+  float: right;
+  margin-right: 20px;
+
+}
+
+.logout{
+  display: block;
 }
 
 
-.NavWelcomeNavA{
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 5px;
-  width: 200px;
-  background-color: rgb(52, 71, 140)
+
+#searchStockTitle{
+  color: white !important;
+  /* padding: 10px !important; */
+  /* border-radius: 10px; */
+  /* border: 3px solid white; */
+  /* background-color: #14252F; */
+
 }
 
 
-.homeLoggedOut{
-  position: absolute;
-  /* line-height: 10px; */
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-left: 15px;
-  margin-top: 15px;
+.searchCrypto{
+  display: flex;
+  float: right;
+  margin-right: 20px;
 
 }

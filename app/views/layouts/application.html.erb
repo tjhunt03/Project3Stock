@@ -12,20 +12,22 @@
   <body>
 
     <%if @current_user.present? %>
+      <div class="ContainerNav">
         Welcome back, <%= @current_user.username %>
         <%= link_to 'Logout', login_path, method: 'delete', class: "logoutNav"  %>
         <div class="userPresent">
         </div>
-        <a href="/#/news" class="">Your News</a>
+        <a href="/#/news" class="newsNav">Your News</a>
+        <a href="/#/searchCrypto" class="searchCrypto">Search CryptoCurrency</a>
         <a href="/#/SearchStock" class="searchstock">Search Stock</a>
 
           <a href="/#/" class="home">Home</a>
     <div>
+    </div>
     <% else %>
-        <a href="/#/" class="homeLoggedOut">Home</a>
+        <!-- <a href="/#/" class="homeLoggedOut">Home</a> -->
       </div>
 
-      
 
     <% end %>
 

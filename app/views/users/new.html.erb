@@ -1,5 +1,4 @@
 
-    <h4 class ="createacc">Create New Account</h4>
 
   <%if flash[:errors].present? %>
   <strong>Please correct the following errors</strong>
@@ -11,26 +10,25 @@
 <% end %>
     <%= form_for @user do |f| %>
 
-    <div class = "jumbotron jumbotron-signup">
+    <div class = "Box">
+    <h4 class ="loginP">Create New Account</h4>
     <div class = "form-signup">
     <%= f.label :username %>
-    <br>
-    <%= f.text_field :username, class: "form-control" %>
+    <%= f.text_field :username, class: "form-control form-control email" %>
     <br>
     <%= f.label :email %>
     <br>
-    <%= f.email_field :email, class:"form-control" %>
+    <%= f.email_field :email, class:"form-control form-control email" %>
     <br>
     <%= f.label :password %>
     <br>
-    <%= f.password_field :password, class: "form-control" %>
+    <%= f.password_field :password, class: "form-control password" %>
     <br>
     <%= f.label :password_confirmation %>
     <br>
-    <%= f.password_field :password_conirmation, class: "form-control"%>
+    <%= f.password_field :password_conirmation, class: "form-control password"%>
     <br>
-    <br>
-    <%= f.submit class: "btn btn-primary btn-lg" %>
+    <%= f.submit class: "signing" %>
 
 
 

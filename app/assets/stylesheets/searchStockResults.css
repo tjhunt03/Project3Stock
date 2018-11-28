@@ -7,22 +7,17 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px rgba(0,0,0,0.20);
   padding: 20px;
   margin-left: 70px;
-  margin-top: 100px;
+  margin-top: 90px;
   height: 50%
 
 }
 
 
 
-.gStockInfo:hover{
-  background-color: #fff;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px rgba(0,0,0,0.20);
-}
-
 
 .sNews {
   box-shadow: 0 14px 28px rgba(0,0,0,0.24), 0 10px 10px rgba(0,0,0,0.20);
-
+  margin-left: 50px;
   border: 8px grey;
   justify-content: space-between;
   width: 86%
@@ -34,23 +29,32 @@
   list-style-type: none;
   padding-bottom: 8px;
   border: 3px  black;
+  background-color: #14252F;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+
 
 }
 
 
 .chart{
-  width: 790px;
+  width: 750px;
   /* background-color: black; */
   color: white;
   text-align: center;
   margin-left: 5%;
-  margin-top: 10%
+  /* margin-top: 100% */
+  margin-bottom: 100%
   display: inline-block;
 }
 
 
 .container-part1{
+  /* height: -100vh; */
   display: flex;
+  /* margin-bottom: 200px */
   justify-content: left;
 
 }

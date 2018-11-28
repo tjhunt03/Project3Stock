@@ -5,6 +5,8 @@ import SearchStock from './SearchStock'
 import SearchStockResults from './SearchStockResults'
 import Profile from './Profile'
 import news from './news'
+import searchCrypto from './searchCrypto'
+import searchCryptoResults from './searchCryptoResults'
 
 class Routes extends React.Component {
   render(){
@@ -17,6 +19,8 @@ class Routes extends React.Component {
         { <Route exact path ="/SearchStockResults/:code" component={SearchStockResults} /> }
         <Route exact path ="/Profile" component={Profile} />
         <Route exact path ="/news" component={news} />
+        <Route exact path ="/searchCrypto" component={searchCrypto} />
+        <Route exact path ="/searchCryptoResults/:symbol" component={searchCryptoResults} />
         </div>
       </Router>
 

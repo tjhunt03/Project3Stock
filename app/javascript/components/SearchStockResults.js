@@ -22,7 +22,7 @@ class SearchStockResults extends React.Component {
             label: 'Open',
             data: [  ],
             backgroundColor:[
-              'red	'
+              'green	'
             ],
 
             fill: false
@@ -33,7 +33,7 @@ class SearchStockResults extends React.Component {
             label: 'Close',
             data: [  ],
             backgroundColor:[
-              'rgb(29, 238, 118)'
+              'red '
             ],
             fill: false,
 
@@ -67,6 +67,7 @@ class SearchStockResults extends React.Component {
         closePrices.push( price.high );
       });
 
+
       console.log(dates, openPrices, closePrices);
       const chartData = {...this.state.ChartData};
       chartData.labels = dates;
@@ -89,7 +90,7 @@ class SearchStockResults extends React.Component {
       }
 
       return (
-        <div className ="container">
+      <div className ="containerStockResults">
 
         <div className ="container-part1">
         <div className="chart">
@@ -102,7 +103,7 @@ class SearchStockResults extends React.Component {
 
 
 
-      </div>
+            </div>
           <div className="gStockInfo">
             <p><strong>STOCK: </strong> {this.state.stockInfo[ticker].quote.companyName}</p>
 
@@ -112,7 +113,7 @@ class SearchStockResults extends React.Component {
 
           </div>
             </div>
-            <h3> NEWS HEADLINES FOR {ticker}</h3>
+            <h3 className="newsHeadlineTicker"> NEWS HEADLINES FOR {ticker}</h3>
           <div className="sNews">
           { this.state.stockInfo[ticker].news.map(n =>
             <li className="newsHeadline"><a href={n.url}>{n.headline}</a></li>

@@ -5,7 +5,7 @@
 .Box{
   text-align: center;
   height: 500px;
-  background: rgba(44, 65, 82, 0.5);
+background-image: linear-gradient(to bottom, #d8dcdd, #c3c8c9, #afb5b6, #9ba2a3, #888f91);
   margin-top: 10px;
   height: 100vh;
 
@@ -18,7 +18,7 @@
 
 
 .email{
-  color: white !important;
+  color: black !important;
   border-radius: 5px;
   margin-left: 40%;
   width: 23%
@@ -29,7 +29,9 @@
   color: white !important;
   margin-top: 10px;
   text-align: center;
-  background: rgba(44, 65, 82, 0.5);
+  padding: 10px;
+  margin-bottom: 50px;
+  background: #003662;
 
 
 }
@@ -51,4 +53,9 @@ header{
 
 .form{
   margin-top: 50px;
+}
+
+
+.ContainerNav{
+  background-color: red !important;
 }
