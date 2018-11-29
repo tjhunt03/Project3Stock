@@ -67,3 +67,5 @@ gem 'pg'
 
 
 gem "js-routes"
+
+gem 'rails_12factor', group: :production
