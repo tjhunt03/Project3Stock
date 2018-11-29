@@ -57,7 +57,7 @@ a.Hlogin{
   background-image: no-repeat;
   overflow: auto;
   margin-top: -50px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .createNewButton{
@@ -166,12 +166,12 @@ a.Hlogin{
 .cryptoInfo{
   margin-top: 55px;
   color:  rgb(22, 209, 242);
-  width: 18%;
+  width: 20%;
   background-color: #003662;
   border: 3px solid white;
   border-radius: 5px;
   float: right;
-  height: 180px;
+  height: 170px;
   margin-right: 130px;
   padding: 30px;
   display: inline;

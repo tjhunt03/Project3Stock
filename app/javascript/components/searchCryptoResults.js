@@ -155,14 +155,14 @@ render(){
       </div>
       <div className="cryptoInfo">
 
-        <h6 className="cryptoTitle">Name: {symbol} </h6>
+        <h6 className="cryptoTitle">NAME: {symbol} </h6>
 
 
-        <h6 className="cryptoStats">Open: </h6>{this.state.cryptoInfo[0].open} <br></br>
+        <h6 className="cryptoStats">OPEN: </h6>{this.state.cryptoInfo[0].open} <br></br>
 
-          <h6 className="cryptoStats">close: </h6>{this.state.cryptoInfo[  this.state.cryptoInfo.length -1  ].close}
+          <h6 className="cryptoStats">CLOSE: </h6>{this.state.cryptoInfo[  this.state.cryptoInfo.length -1  ].close}
         <br></br>
-        <h6 className="cryptoStats">Volume: </h6>{this.state.cryptoInfo[0].volumefrom}
+        <h6 className="cryptoStats">VOLUME: </h6>{this.state.cryptoInfo[0].volumefrom}
 
 
 

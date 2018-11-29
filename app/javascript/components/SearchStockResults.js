@@ -7,8 +7,6 @@ import {Bar, Line, Pie} from 'react-chartjs-2';
 class SearchStockResults extends React.Component {
 
   // state = {}
-
-
   constructor(props){
     super(props);
 
@@ -38,17 +36,36 @@ class SearchStockResults extends React.Component {
             fill: false,
 
 
-
-
           }
 
         ]
       }
-    };
+    }; //state
+  } //constructor
 
-  }
+
 
   componentDidMount(){
+
+    const timestampToDateString = timestamp => {
+      // var a = new Date(timestamp * 1000);
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      // var year = a.getFullYear();
+      // var month = months[a.getMonth()];
+      // var date = a.getDate();
+      // var hour = a.getHours();
+      // var min = a.getMinutes();
+      // var sec = a.getSeconds();
+      // var time = date + ' ' + month + ' ' + year; // + ' ' + hour + ':' + min + ':' + sec ;
+
+      let year = new Date(timestamp).getFullYear()
+      let month = new Date(timestamp);
+      //gets index from months array
+      month = months[month.getMonth()];
+      let date = new Date(timestamp).getDate()
+
+      return `${date} ${month} ${year}`;
+    }
 
     let ticker = this.props.match.params.code;
     console.log(ticker);
@@ -62,7 +79,7 @@ class SearchStockResults extends React.Component {
       const openPrices = [];
       const closePrices = [];
       response.data[ticker].chart.forEach(price => {
-        dates.push( price.date );
+        dates.push( timestampToDateString(price.date) );
         openPrices.push( price.low );
         closePrices.push( price.high );
       });
@@ -74,12 +91,13 @@ class SearchStockResults extends React.Component {
       chartData.datasets[0].data = openPrices;
       chartData.datasets[1].data = closePrices;
       this.setState({ ChartData: chartData  });
-
-
-    })
+    }) //then
     .catch( console.warn );
+  } //componentDidMount
 
-  }
+  //convert date format
+
+
 
     render(){
 
@@ -110,6 +128,7 @@ class SearchStockResults extends React.Component {
             <p><strong>OPEN:</strong> ${this.state.stockInfo[ticker].chart[0].open}</p>
 
             <p><strong>CLOSE:</strong> ${this.state.stockInfo[ticker].quote.close}</p>
+            <p><strong>VOLUME:</strong> {this.state.stockInfo[ticker].chart[0].volume}</p>
 
           </div>
 

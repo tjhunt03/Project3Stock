@@ -43,7 +43,7 @@ class news extends React.Component {
 
 
         { this.state.newsInfo.articles.map(n => <li className="newsTitle"><h5 className="yourNewsTitle"> </h5><a href={n.url}>{n.title}</a>
-      <div className="newsDescription"><h5 className="yourNewsTitle"> </h5>{n.description}</div>{n.urlToImage}</li>)}
+      <div className="newsDescription"><h5 className="yourNewsTitle"> </h5>{n.description}</div></li>)}
       </div>
     </div>
     )

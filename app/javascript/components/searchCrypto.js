@@ -31,7 +31,7 @@ class searchCrypto extends React.Component {
     return(
       <div className="bodySearchCrypto">
       <div class="cryptoBody">
-      <h3 className="searchCryptoNow">search crypto</h3>
+      <h3 className="searchCryptoNow">&nbsp;</h3>
       <form className="cryptoForm" onSubmit={ ev => this.handleSubmit(ev) }>
         <p id="searchCryptoTitle">Search CryptoCurrency</p>
       <input id="SearchCryptoForm" placeholder="Lookup CryptoCurrency" type="text" onChange={ ev => this.handleInput(ev)}/>
