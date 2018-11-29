@@ -135,7 +135,7 @@ class SearchStockResults extends React.Component {
 
 
 
-          </div><br></br>
+          </div>
           <h3 className="newsHeadlineTicker"> NEWS HEADLINES FOR {ticker}</h3>
           <div className="sNews">
             { this.state.stockInfo[ticker].news.map(n =>
