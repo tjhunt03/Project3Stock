@@ -140,27 +140,33 @@ render(){
       <div className="chartCryptoContainer">
       <div className="containerCryptoChart">
       <div className="cryptoChart">
+        <button className="cryptoButtons" onClick={ev => this.displayDayHistory(ev)}>Day</button>
+        <button className="cryptoButtons" onClick={ev => this.displayWeekHistory(ev) }>Week</button>
+        <button className="cryptoButtons" onClick={ev => this.displayMonthHistory(ev) }>Month</button>
 
-        <button onClick={ev => this.displayDayHistory(ev)}>Day</button>
-        <button onClick={ev => this.displayWeekHistory(ev) }>Week</button>
-        <button onClick={ev => this.displayMonthHistory(ev) }>Month</button>
-
+          <h5 className="cryptoSymbol">Name: {symbol}</h5>
         <Line
           data={this.state.ChartData}
           options={{}}
 
           />
 
-        <div className="cryptoInfo">
-
-        <h6>Open </h6>{this.state.cryptoInfo[0].open} <br></br> <h6>close </h6>{this.state.cryptoInfo[  this.state.cryptoInfo.length -1  ].close}
-
-
-
-
+        </div>
       </div>
-      </div>
-    </div>
+      <div className="cryptoInfo">
+
+        <h6 className="cryptoTitle">Name: {symbol} </h6>
+
+
+        <h6 className="cryptoStats">Open: </h6>{this.state.cryptoInfo[0].open} <br></br>
+
+          <h6 className="cryptoStats">close: </h6>{this.state.cryptoInfo[  this.state.cryptoInfo.length -1  ].close}
+        <br></br>
+        <h6 className="cryptoStats">Volume: </h6>{this.state.cryptoInfo[0].volumefrom}
+
+
+
+        </div>
     </div>
 
   );

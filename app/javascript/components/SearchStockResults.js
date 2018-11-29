@@ -91,10 +91,9 @@ class SearchStockResults extends React.Component {
 
       return (
       <div className ="containerStockResults">
-
         <div className ="container-part1">
         <div className="chart">
-          <p><strong>NAME: </strong> {this.state.stockInfo[ticker].quote.companyName}</p>
+          <h5 className="stockName"><strong>NAME: </strong> {this.state.stockInfo[ticker].quote.companyName}</h5>
 
               <Line
                 data={this.state.ChartData}
@@ -108,20 +107,22 @@ class SearchStockResults extends React.Component {
             <p><strong>STOCK: </strong> {this.state.stockInfo[ticker].quote.companyName}</p>
 
             <p><strong>PRICE:</strong> ${this.state.stockInfo[ticker].quote.latestPrice}</p>
-            <p><strong>OPEN:</strong> ${this.state.stockInfo[ticker].quote.open}</p>
+            <p><strong>OPEN:</strong> ${this.state.stockInfo[ticker].chart[0].open}</p>
+
             <p><strong>CLOSE:</strong> ${this.state.stockInfo[ticker].quote.close}</p>
 
           </div>
-            </div>
-            <h3 className="newsHeadlineTicker"> NEWS HEADLINES FOR {ticker}</h3>
+
+
+
+
+          </div><br></br>
+          <h3 className="newsHeadlineTicker"> NEWS HEADLINES FOR {ticker}</h3>
           <div className="sNews">
-          { this.state.stockInfo[ticker].news.map(n =>
-            <li className="newsHeadline"><a href={n.url}>{n.headline}</a></li>
+            { this.state.stockInfo[ticker].news.map(n =>
+              <li className="newsHeadline"><a href={n.url}>{n.headline}</a></li>
 
-          )}
-
-
-
+            )}
           </div>
         </div>
       );
